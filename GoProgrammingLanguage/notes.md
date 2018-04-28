@@ -32,3 +32,5 @@ assign the value to _ and arg gets the key value.
 
 Generally they recommend that you use either `s := ""` or `var s string` when declaring variables with empty values. can only var-less decl in a function, not at a package level.
 
+Oh god, the go format default uses tabs. Nooooooooo!
+
