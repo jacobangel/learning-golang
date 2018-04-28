@@ -45,12 +45,21 @@ Map declaration is... od `make(map[string]int)` I guess it makes sense if you sa
 
 Printf stuff seems rather standard.
 It's odd, this example doesn't seem to work? How do I break out of `input.Scan()`?  hmmm oh thanks [google/SO `Ctrl+D`](https://stackoverflow.com/questions/34481065/break-out-of-input-scan/34481857). Huh, my first item always does `<N>D`  instead of just printing the number. Kind of odd. Might be a consequence of how I have to send the end of input.
+
 While we can declare functions in any order, I think they should have put the countLines first if this were a real program. I can see that from a teaching standpoint though, it's probably better to introduce the function second. What's a `*` mean exactly.
+
+I did the exercise for 2, but i made it more interesting for splitting on spaces.
 
 ### 1.4 Animaged GIFs
 
+Import symantics. `image/color` => color.White. Curious how namespace issues are resolved.
+constnts can only be numbers, strings, or booleans.
 
-I did the exercise for 2, but i made it more interesting for splitting on spaces.
+[]color.Color{} wtf is this. 'Composite literals', for noting slicese and structs. Wish i had learned more C lol. Watch out for (§4.2, §4.4.1)
+
+
+
+
 
 
 
