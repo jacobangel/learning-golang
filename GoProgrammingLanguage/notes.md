@@ -57,6 +57,19 @@ constnts can only be numbers, strings, or booleans.
 
 []color.Color{} wtf is this. 'Composite literals', for noting slicese and structs. Wish i had learned more C lol. Watch out for (§4.2, §4.4.1)
 
+Omg types are so annoying sometimes.
+
+### 1.5 Fetching a URL
+
+Easy peasy; liking the error structure so far.
+
+### 1.6 Concurrently Fetching URLs
+
+Nothing too big, though it's funny how easy reddit will time you out.
+
+### 1.7 A Web Server
+
+
 
 
 
