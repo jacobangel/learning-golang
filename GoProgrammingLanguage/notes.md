@@ -68,10 +68,94 @@ Easy peasy; liking the error structure so far.
 Nothing too big, though it's funny how easy reddit will time you out.
 
 ### 1.7 A Web Server
+Webserver stuff seems nice and straight forward so far.
+Hmm... what is a mutex. I have always heard it as a mutex lock, but I honestly have no idea what that is.
+Ugh auto save trimming packages while you're writing out an example is super annoying. Starting with ampersand.
+Huh my example seems to increment the count a ton of times when i swap between count and othres.
+`err := r.ParseForm(); err != nil` is an interesting idiom, though unclear how i feel with it.
 
+The interface stuff looks really nice; great example with combining lissajous with the webserver.
 
+### 1.8 Loose Ends
 
+Control flow; switches are a bit interesting here, i like the tagless part. also t he no fall through, like duh.
 
+"simple statements" need to dig in here for the differentaition.
+Pointers are visisble. & gives the address, and *retrieves the varaible, but there is no pointer arithmetic.
+
+golang.org/pkg and godoc.
+
+## Chapter 2: Program Structure
+
+Names begin with letters and case matters.
+Something names like "int" you can redeclare but woof.
+scope is function local, though package level variables may be accessed anywhere
+
+Keywords:
+
+- break -
+- case -
+- chan -
+- const  -
+- continue  -
+- default -
+- defer -
+- else  -
+- fallthrough  -
+- for  -
+- func -
+- go -
+- goto -
+- break -
+- case -
+- chan -
+- const  -
+- continue  -
+- default -
+- defer -
+- else  -
+- fallthrough  -
+- for  -
+- func -
+- go -
+- goto -
+- if -
+- import -
+- interface -
+- map -
+- package -
+- range -
+- return -
+- select -
+- struct -
+- switch -
+- type -
+- var -
+
+Constnats: true, false, iota, nil
+Types: int, int8-64, uint, uint8-64, uintptr, float32/64, complext, bool, byte rune string error
+Functions:
+- make
+- len
+- cap
+- new
+- append
+- copy
+- close
+- delete
+- complex
+- real
+- imag
+- panic
+- recover
+
+Whoa, names that start with a capital letter are exported. fmt.Print...
+
+lowerCamelCase, with acronyms always uppercase
+
+### 2.2 Declarations
+
+var, const, type, and func`
 
 
 
