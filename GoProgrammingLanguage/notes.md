@@ -155,9 +155,36 @@ lowerCamelCase, with acronyms always uppercase
 
 ### 2.2 Declarations
 
-var, const, type, and func`
+four major types: var, const, type, and func
 
+Oh things return value / error tuples a lot. I guess that's what you get with no exceptions. ALos it's really noisy when you ignore an error value.
 
+I'm still a bit iffy on var i = asfd; vs i := asdf
+tuple expansion is nice.
+
+Short variable declaration are mostly for local variables that don't need to be explicitly types. `:=` is declaration `=` is assignment. So `var i = 100`  is both declaration and assignment.
+
+sometimes short decl doesn't assign either. Also, short decl cannot reuse all the values:
+`in, err :=` followd by `out, err` will reuse `err`
+`f, err :=` followed by `f, err :=` will error though.
+
+# 2.3.2 Pointers
+
+Refresher:
+
+variables are storage containign a value. They are referenced by a name or by an expression, `x` or `x[0]`.
+A _pointer_ value is the _address_ of a variable. Not every value has an address, but all variables do. Pointers allow us to read or update a value of a variable indirectly, knowing nothing else about it.
+
+```go
+var x int
+var xPointer *int
+xPointer = &x
+// &x = address of x yeilds a pointer
+// *int = pointer to integer
+```
+
+Addressable values.
+Oh shit flags are awesome.
 
 
 
