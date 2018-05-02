@@ -15,5 +15,8 @@ func main() {
 	// fmt.Printf("%g\n", boilingF-tempconv.FreezingC)
 	fmt.Println(boilC.String())
 	fmt.Println(boilingF.String())
-
+	fmt.Println(tempconv.FToK(boilingF))
+	fmt.Println(tempconv.CToK(boilC))
+	fmt.Println(tempconv.CToK(tempconv.AbsoluteZeroC))
+	fmt.Println(tempconv.CToK(tempconv.FreezingC))
 }

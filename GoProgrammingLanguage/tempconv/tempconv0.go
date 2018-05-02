@@ -9,6 +9,9 @@ type Celsius float64
 // Fahrenheit is a good thing.
 type Fahrenheit float64
 
+// Kelvin is a bad name.
+type Kelvin float64
+
 const (
 	AbsoluteZeroC Celsius = -237.15
 	FreezingC     Celsius = 0
@@ -23,10 +26,6 @@ func (c Celsius) String() string {
 	return fmt.Sprintf("%g°C", c)
 }
 
-func CToF(c Celsius) Fahrenheit {
-	return Fahrenheit(c*9/5 + 32)
-}
-
-func FToC(f Fahrenheit) Celsius {
-	return Celsius((f - 32) * 5 / 9)
+func (k Kelvin) String() string {
+	return fmt.Sprintf("%gK", k)
 }

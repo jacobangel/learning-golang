@@ -199,5 +199,6 @@ man i love named types
 ### 2.6 Packages and Files
 Man, super magical in some regards.
 Still not sure how I feel about the capitalization thing.
-
+Wow package assembly is wild. Just crazy.
+Imports are sensible, but I'll be honest, I don't entirely understand how they go about just generally working.
 ### 2.7 Scope
