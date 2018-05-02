@@ -186,6 +186,18 @@ xPointer = &x
 Addressable values.
 Oh shit flags are awesome.
 
+### 2.3 Variables
+The whole reassignment ruling is a bit odd sometimes. Also can see := vs = being confusing wihtout assistance from the IDE
+
+### 2.4 Assignments
+Tuples tuples tuples
+
+### 2.5 Type Declarations
+man i love named types
 
 
+### 2.6 Packages and Files
+Man, super magical in some regards.
+Still not sure how I feel about the capitalization thing.
 
+### 2.7 Scope
