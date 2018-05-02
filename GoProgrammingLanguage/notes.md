@@ -200,5 +200,7 @@ man i love named types
 Man, super magical in some regards.
 Still not sure how I feel about the capitalization thing.
 Wow package assembly is wild. Just crazy.
-Imports are sensible, but I'll be honest, I don't entirely understand how they go about just generally working.
+Imports are sensible, but I'll be honest,
+I don't entirely understand how they go about just generally working.
+Derp you have to put them in folders lol.
 ### 2.7 Scope
