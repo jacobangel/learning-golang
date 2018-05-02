@@ -204,3 +204,26 @@ Imports are sensible, but I'll be honest,
 I don't entirely understand how they go about just generally working.
 Derp you have to put them in folders lol.
 ### 2.7 Scope
+Lexical scoping with a Universal scope. The whole block scoping kind of throws me:
+
+if:
+
+if x := f(); x == 0 {
+  fmt.PrintLine
+} else if y := g(); y == x {
+  fmt.Println(x, y)
+} else {
+  fmt.Println(x, y)
+}
+=> is the same as lik:
+if x := f(); x == 0 {
+  fmt.PrintLine
+} else {
+  if y := g(); y == x {
+    fmt.Println(x, y)
+  } else {
+    fmt.Println(x, y)
+  }
+}
+
+That said, its good they favor style that keeps code narrow and not marching off to the right.
