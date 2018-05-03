@@ -227,3 +227,34 @@ if x := f(); x == 0 {
 }
 
 That said, its good they favor style that keeps code narrow and not marching off to the right.
+
+## Chapter 3: Basic Data Types
+
+### 3.1 Integers
+Nothing too crazy here.
+integers, 8 through 64, signed and unsigned.
+
+`rune`s are synonyms for `int32`
+`uintprt` unsepcified width but holds a pionter.
+
+Operator precence goes in five tiers
+1. "* / & << >> & &^"
+2. "+ - | ^"
+3. "== != < <= > =>"
+4. "&&"
+5. "||"
+
+Similar groupings go left to right.
+Overflow is silently discarded
+All basic types can be compared.
+Hah, I never realized why unsigned ints would be so hilariously bad for loops. Could never be less than 0 hah.
+Conversion using types helps make things work better together.
+
+### 3.2 Floating Point
+Nothing surprising here.
+Float32 / Float64, prefer 64 unless you have a good reason. NaN works like expected, though I am starting to really like the pattern of returning tuples.
+
+boy typing up that example made me feel smart.
+
+
+
