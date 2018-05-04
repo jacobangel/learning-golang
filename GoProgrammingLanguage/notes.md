@@ -256,5 +256,35 @@ Float32 / Float64, prefer 64 unless you have a good reason. NaN works like expec
 
 boy typing up that example made me feel smart.
 
+### 3.3 Complex numbers
 
+I'll be honest, I'm inclined to skip this one...
+
+### 3.4 Booleans
+Standard short circuiting. Reminder: && is boolean mult, || is boolean add
+No implicit converstion to 0 / 1
+
+### 3.5 Strings
+
+Immutable! Substring slicing rules apply like with the ranges/arrays/whatever.
+
+They can be written as string literals... i mean sure.
+UTF-8 is the default.
+
+Double quotes are normal mode.
+Backticks can be used to write raw string literals.
+No escapes are used. Usally used to write regexps and things with lots of slashes, or multiple lines. Though carriage returns are removed.
+
+Unicode: lol Ken Thomspons and Rob Pike also made UTF-8 hah.
+
+NOW THIS IS POD RACING
+
+haha "`\uhhhh`"
+
+bytes, strings, strconv, and unicode are important pacakges.
+
+bytes for building buffers
+strings for general purpose string manip
+strconv for moving things around.
+unicode for introspection and building.
 
