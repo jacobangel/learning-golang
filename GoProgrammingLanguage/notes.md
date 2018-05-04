@@ -288,3 +288,9 @@ strings for general purpose string manip
 strconv for moving things around.
 unicode for introspection and building.
 
+wait what happend to single quotes
+
+string manip is pretty good so far.
+
+Intersting though to see some of the strings are byte slices in various utils.
+Sprintf, Atoi, Parse int.
