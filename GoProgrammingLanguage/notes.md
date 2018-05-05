@@ -311,5 +311,49 @@ const (
 Nice for make enumerations.
 ... Uncommitted constants, values that become typed later. Seems to mkae things more flexible.
 
+## Chapter 4: Composite Types
+
+Arrays, Slices, Maps, Structs, JSON, Text/Templates?
+
+Arrays are rarely used because they're inherently fixed and initialized with zero values unelss supplied:
+`var q  [3]int{1,2}` => `[1,2,0]`
+
+length is part of type.
+
+Unfixed length is interesting.
+
+```go
+symbol := [...]int{99:10}
+// => [0, 0,.., 10] with a len of 100
+```
+Arrays of equal type and length can be compared with ==.
+```go
+a := [2]int{1,2}
+b := [...]int{1,2}
+c := [2]int{1,3}
+d := [3]int{1,3}
+// a == b, b!==c, a!==c
+// c == d throws an error.
+```
+functions receive copies of values, so passing large arrays is inefficient, which is why pointers are used instead of normally passing them around.
+
+### 4.2 Slices
+
+AKA what we really want to be talking about. They wrap arrays, and have pointer, length, and capacity. An array with no size defined.
+
+Slice operators nearly identical to the python semantics.
+
+If you slice an array you can get some counter intuitive results.
+
+Slices are not comparable and you likely need to use bytes.Equal to compare byte ranges.
+
+zero value is nil, no underlying array. emptyh array doesn't mean nil though. It could have an empty underlying array, so you need to use len for that.
+
+### 4.2.1 appending to slices
+
+
+
+
+
 
 
