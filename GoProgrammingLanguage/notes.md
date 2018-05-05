@@ -294,3 +294,22 @@ string manip is pretty good so far.
 
 Intersting though to see some of the strings are byte slices in various utils.
 Sprintf, Atoi, Parse int.
+
+### 3.6 Mafia: Constants
+
+Constants are evaluate at compile time, not runtime. Bool/str/number. LOOKS like a constant.
+The redeclaration thing looks stupid af.
+const ( a = 1, b ) seems like an oddtrade off.
+
+oh `iota` doest hat stand for increment one to a or something?
+
+const (
+  Sunday Weekday = iota
+  Monday ...
+)
+
+Nice for make enumerations.
+... Uncommitted constants, values that become typed later. Seems to mkae things more flexible.
+
+
+
