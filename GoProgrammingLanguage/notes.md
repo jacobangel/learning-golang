@@ -350,10 +350,6 @@ Slices are not comparable and you likely need to use bytes.Equal to compare byte
 zero value is nil, no underlying array. emptyh array doesn't mean nil though. It could have an empty underlying array, so you need to use len for that.
 
 ### 4.2.1 appending to slices
+Looks a bit tedious, can't wait to find out teh sugar that gets us out of this bind.
 
-
-
-
-
-
-
+derp apend. `append(list, item)`
